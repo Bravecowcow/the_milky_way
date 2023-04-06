@@ -28,7 +28,7 @@ def get_weather(city):
 #     res = requests.get(url).json()
 #     weather = res['date']['list'][0]
 #     return weather['weather'], math.floor(weather['temp'])
-return '晴', '15℃'
+    return '晴', '15℃'
 
 
 # 当前城市、日期
