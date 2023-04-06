@@ -25,7 +25,7 @@ birthdays = os.environ["BIRTHDAY"].split(',')
 # 获取天气和温度
 def get_weather(city):
     url = 'http://wthrcdn.etouch.cn/weather_mini'
-    response = requests.get(url, {'city': name})
+    response = requests.get(url, {'city': city})
     result = json.loads(response.content.decode())
     
     return result.get('data').get('today').get('type'), result.get('data').get('today').get('low')
